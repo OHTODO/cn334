@@ -6,6 +6,7 @@
         /* background-image: url('https://images.pexels.com/photos/995043/pexels-photo-995043.jpeg?cs=srgb&dl=pexels-ioannis-ritos-995043.jpg&fm=jpg'); */
         background-image: url('https://www.linkpicture.com/q/background_25.jpg');
         background-size: cover;
+        background-repeat: no-repeat;
         height: 100%;
     }
     #heD {
@@ -52,12 +53,10 @@
                         @endforeach
                         </tbody>
                     </table>
-                    <div >
-                            <!-- <a href="/task" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add new Task</a> -->
+                </div>
+                <div>
                             <a href="/task" style="color:blue;"><image src="https://www.linkpicture.com/q/add_64px.png" style="margin:auto; margin-top:30px;"></a>
                     </div>
-                    
-                </div>
             </div>
         </div>
     </div>
