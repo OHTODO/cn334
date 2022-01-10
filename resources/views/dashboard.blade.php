@@ -56,7 +56,7 @@
                     </table>
                 </div>
                 <div>
-                            <a href="/task" style="color:blue;"><image src="https://www.linkpicture.com/q/add_64px.png" style="margin:auto; margin-top:30px;"></a>
+                            <a href="/task"><image src="https://www.linkpicture.com/q/add_64px.png" style="margin:auto; margin-top:30px;"></a>
                     </div>
             </div>
         </div>
