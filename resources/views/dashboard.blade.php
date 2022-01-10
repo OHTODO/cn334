@@ -1,4 +1,7 @@
 <style>
+    .action {
+
+    }
     .Header {
         margin:0px:
     }
@@ -42,10 +45,9 @@
                                     {{$task->description}}
                                 </td>
                                 <td class="p-3 px-5">
-                                    
-                                    <a href="/task/{{$task->id}}" name="edit" class="mr-3 text-sm bg-blue-500 hover:bg-blue-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Edit</a>
+                                    <a href="/task/{{$task->id}}" name="edit" class="action">Edit ✒️</a>
                                     <form action="/task/{{$task->id}}" class="inline-block">
-                                        <button type="submit" name="delete" formmethod="POST" class="text-sm bg-red-500 hover:bg-red-700 text-white py-1 px-2 rounded focus:outline-none focus:shadow-outline">Delete</button>
+                                        <button type="submit" name="delete" formmethod="POST" class="action">Delete ❌</button>
                                         {{ csrf_field() }}
                                     </form>
                                 </td>

@@ -5,7 +5,7 @@
 <x-app-layout>
 <x-slot name="header">
     <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-        {{ __('Add Task') }}
+        {{ __('Add Task✒️') }}
     </h2>
 </x-slot>
 
@@ -23,7 +23,7 @@
                 </div>
 
                 <div class="form-group">
-                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Add Task</button>
+                    <button type="submit">Add Task</button>
                 </div>
                 {{ csrf_field() }}
             </form>
