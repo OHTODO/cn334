@@ -113,8 +113,9 @@
             color: #fff;
             text-align: center;
         }
-        .banner-area .banner-img {
+        .banner-area .banner-img:after {
             background-image: url(https://i.postimg.cc/mDHBPC8y/2.jpg);
+            backdrop-filter: blur(10px);
             position: absolute;
             top: 0;
             left: 0;
