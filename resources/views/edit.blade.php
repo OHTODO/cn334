@@ -5,6 +5,18 @@
     .Head {
         font-size: 40px;
     }
+    .text-box {
+        padding:40px;
+        height: 30%;
+        width: 100%;
+        border-radius: 30px;
+    }
+    #button {
+        display: block;
+        text-align: center;
+        margin: auto;
+        /* margin-top: 30px; */
+    }
 </style>
 
 <x-app-layout>
@@ -21,13 +33,13 @@
             <form method="POST" action="/task/{{ $task->id }}" class="fill-text">
 
                 <div class="form-group">
-                    <textarea name="description" class="bg-gray-100 rounded border border-gray-400 leading-normal resize-none w-full h-20 py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white">{{$task->description }}</textarea>	
+                    <textarea name="description" class="text-box">{{$task->description }}</textarea>	
                     @if ($errors->has('description'))
                         <span class="text-danger">{{ $errors->first('description') }}</span>
                     @endif
                 </div>
 
-                <div class="button">
+                <div id="button">
                     <button type="submit" name="update"><image src="https://www.linkpicture.com/q/Check-Circle_40px.png" style="margin:auto; margin-top:30px;"></button>
                 </div>
             {{ csrf_field() }}

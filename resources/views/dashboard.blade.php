@@ -10,6 +10,10 @@
         background-repeat: no-repeat;
         height: 100%;
     }
+    #button {
+        margin:auto; 
+        margin-top:30px;
+    }
     #heD {
         font-size: 20px;
     }
@@ -32,8 +36,8 @@
                         <thead>
                         <tr class="border-b">
                             <th class="text-left p-3 px-5" id="heD">Task</th>
-                            <th class="text-left p-3 px-5" id="heD">Goal to date</th>
                             <th class="text-left p-3 px-5" id="heD">Target Date</th>
+                            <th class="text-left p-3 px-5" id="heD">Update Date</th>
                             <th class="text-left p-3 px-5" id="heD">Actions</th>
                             <th></th>
                         </tr>
@@ -63,8 +67,8 @@
                     </table>
                 </div>
                 <div>
-                            <a href="/task"><image src="https://www.linkpicture.com/q/add_64px.png" style="margin:auto; margin-top:30px;"></a>
-                    </div>
+                    <a href="/task"><image src="https://www.linkpicture.com/q/add_64px.png" id="button"></a>
+                </div>
             </div>
         </div>
     </div>
