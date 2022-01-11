@@ -1,10 +1,35 @@
 <style>
-    .fill-text{
+    .fill-text {
         padding: 20px;
     }
     .Head {
         font-size: 40px;
     }
+    .column {
+        column-count: 3;
+        margin-top: 30px;
+    }
+    .text-box {
+        padding:40px;
+        height: 30%;
+        width: 100%;
+        border-radius: 30px;
+    }
+    #button {
+        display: block;
+        text-align: center;
+        margin: auto;
+        /* margin-top: 30px; */
+    }
+
+    #calendar {
+        size: 300px;
+        border-radius: 15px;
+        margin:auto;
+        margin-top: 10px;
+        height: 50px;
+    }
+
 </style>
 
 <x-app-layout>
@@ -21,15 +46,19 @@
             <form method="POST" action="/task" class="fill-text">
 
                 <div class="text-bar">
-                    <textarea name="description" class="bg-gray-100 rounded border border-gray-400 leading-normal resize-none w-full h-20 py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white"  placeholder='Enter your task'></textarea>  
+                    <!-- <textarea name="description" class="bg-gray-100 rounded border border-gray-400 leading-normal resize-none w-full h-20 py-2 px-3 font-medium placeholder-gray-700 focus:outline-none focus:bg-white"  placeholder='Enter your task'></textarea>   -->
+                    <textarea name="description" class="text-box"  placeholder='Enter your task'></textarea>
                     @if ($errors->has('description'))
                         <span class="text-danger">{{ $errors->first('description') }}</span>
                     @endif
                 </div>
+                
+                <div class="column">
+                    <input type="date" name="goal" value="" id="calendar"/>
 
-                <div class="button">
-                    <button type="submit"><image src="https://www.linkpicture.com/q/add_64px.png" style="margin:auto; margin-top:30px;"></button>
+                    <button type="submit" id="button"><image src="https://www.linkpicture.com/q/add_64px.png"></button>
                 </div>
+
                 {{ csrf_field() }}
             </form>
         </div>

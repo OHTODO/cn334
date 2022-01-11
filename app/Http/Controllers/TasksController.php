@@ -21,10 +21,13 @@ class TasksController extends Controller
     public function create(Request $request)
     {
         $this->validate($request, [
-            'description' => 'required'
+            'description' => 'required',
+            'goal' => 'required'
         ]);
+
     	$task = new Task();
     	$task->description = $request->description;
+        $task->goal = $request->goal;
     	$task->user_id = auth()->user()->id;
     	$task->save();
     	return redirect('/dashboard'); 

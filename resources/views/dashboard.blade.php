@@ -5,7 +5,6 @@
         margin:0px:
     }
     .body-task {
-        /* background-image: url('https://images.pexels.com/photos/995043/pexels-photo-995043.jpeg?cs=srgb&dl=pexels-ioannis-ritos-995043.jpg&fm=jpg'); */
         background-image: url('https://www.linkpicture.com/q/background_25.jpg');
         background-size: cover;
         background-repeat: no-repeat;
@@ -33,6 +32,8 @@
                         <thead>
                         <tr class="border-b">
                             <th class="text-left p-3 px-5" id="heD">Task</th>
+                            <th class="text-left p-3 px-5" id="heD">Goal to date</th>
+                            <th class="text-left p-3 px-5" id="heD">Target Date</th>
                             <th class="text-left p-3 px-5" id="heD">Actions</th>
                             <th></th>
                         </tr>
@@ -42,6 +43,12 @@
                             <tr class="border-b hover:bg-orange-100">
                                 <td class="p-3 px-5">
                                     {{$task->description}}
+                                </td>
+                                <td class="p-3 px-5">
+                                    {{$task->goal}}
+                                </td>
+                                <td class="p-3 px-5">
+                                    {{$task->created_at}}
                                 </td>
                                 <td class="p-3 px-5">
                                     <a href="/task/{{$task->id}}" name="edit" class="action">Edit ✒️</a>
