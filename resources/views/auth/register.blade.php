@@ -1,7 +1,34 @@
+<style>
+    .RegisH1 {
+        font-size: 100px;
+        text-align: center;
+    }
+
+    .card {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 8%;
+        background: #f2f2f2;
+        width: 500px;
+        height: auto;
+        box-shadow: 2px 2px 8px;
+        border-radius: 30px;
+        padding: 50px;
+        opacity: 10px;
+    }
+
+    body {
+        backdrop-filter: blur(3px);
+    }
+</style>
+
+<body style="background-image: url('https://www.linkpicture.com/q/LPic61dd173c2e9584640947.jpg');">
 <x-guest-layout>
-    <x-jet-authentication-card>
+    <div class="card">
+    <!-- <x-jet-authentication-card> -->
+        <!-- <img src="https://www.linkpicture.com/q/Goal-PNG-File.png" /> -->
+        <h1 class="RegisH1">Register</h1>
         <x-slot name="logo">
-            <x-jet-authentication-card-logo />
         </x-slot>
 
         <x-jet-validation-errors class="mb-4" />
@@ -56,5 +83,6 @@
                 </x-jet-button>
             </div>
         </form>
-    </x-jet-authentication-card>
+    </div>
+    <!-- </x-jet-authentication-card> -->
 </x-guest-layout>
