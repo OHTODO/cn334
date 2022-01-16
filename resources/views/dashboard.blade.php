@@ -52,7 +52,7 @@
                                     {{$task->goal}}
                                 </td>
                                 <td class="p-3 px-5">
-                                    {{$task->created_at}}
+                                    {{$task->updated_at}}
                                 </td>
                                 <td class="p-3 px-5">
                                     <a href="/task/{{$task->id}}" name="edit" class="action">Edit ✒️</a>

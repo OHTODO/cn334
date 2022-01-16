@@ -33,7 +33,6 @@
         display: block;
         text-align: center;
         margin: auto;
-        /* margin-top: 30px; */
     }
 
     #calendar {
@@ -59,17 +58,13 @@
 
                     <div class="text-bar">
                         <textarea name="description" class="text-box"  placeholder='Enter your task'></textarea>
-                        @if ($errors->has('description'))
-                            <span class="text-danger">{{ $errors->first('description') }}</span>
-                        @endif
                     </div>
                     
                     <div class="column">
                         <input type="date" name="goal" value="" id="calendar"/>
-
                         <button type="submit" id="button"><image src="https://www.linkpicture.com/q/add_64px.png"></button>
                     </div>
-
+                    
                     {{ csrf_field() }}
                 </form>
             </div>
