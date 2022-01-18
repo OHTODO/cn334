@@ -2,10 +2,6 @@
 <html lang="en">
 <!--divinectorweb.com-->
 <head>
-	<meta charset="UTF-8">
-	<title>Responsive Website design with flexbox</title>
-	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
     <style>
         * {
             margin: 0;
