@@ -12,11 +12,11 @@ class SocialShareController extends Controller
         )
         ->facebook()
         ->twitter()
-        ->linkedin()
-        ->telegram()
-        ->whatsapp()        
-        ->reddit()
+        // ->linkedin()
+        // ->telegram()
+        // ->whatsapp()        
+        // ->reddit()
         ->getRawLinks();
-        return view('social-share',compact('shareComponent'));
+        return view('dashboard',compact('shareComponent'));
     }
 }

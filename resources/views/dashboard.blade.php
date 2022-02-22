@@ -10,8 +10,16 @@
         background-repeat: no-repeat;
         height: 100%;
     }
+    .social-button {
+        border-radius: 25px;
+        border: 2px solid #73AD21;
+        padding: 20px;
+        width: 200px;
+        margin-bottom: 20px;
+        /* height: 150px; */
+    }
     #button {
-        margin:auto; 
+        margin:auto;
         margin-top:30px;
     }
     #heD {
@@ -65,6 +73,15 @@
                             </tr>
                         @endforeach
                         </tbody>
+                        <body>
+                            <ul class="social-button">
+                                @foreach($shareComponent as $key => $value)
+                                <li>
+                                    <a href="{{$value}}" >{{$key}}</a>
+                                </li>
+                                @endforeach
+                            </ul>
+                        </body>
                     </table>
                 </div>
                 <div>
