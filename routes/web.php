@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TasksController;
-
+use App\Http\Controllers\SocialShareController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +28,5 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function(){
     Route::get('/task/{task}', [TasksController::class, 'edit']);
     Route::post('/task/{task}', [TasksController::class, 'update']);
 });
+
+Route::get('social-share',[SocialShareController::class, 'index']);

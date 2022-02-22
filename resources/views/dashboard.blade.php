@@ -60,7 +60,8 @@
                                         <button type="submit" name="delete" formmethod="POST" class="action">Delete ❌</button>
                                         {{ csrf_field() }}
                                     </form>
-                                </td>
+                                </td>         
+                                
                             </tr>
                         @endforeach
                         </tbody>
